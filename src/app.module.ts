@@ -41,13 +41,13 @@ import { TransmisionesModule } from './v1/transmisiones/transmisiones.module';
     TypeOrmModule.forRootAsync({
       useFactory: () => ({
         type: 'mysql',
-        host: process.env.DB_HOST, // Accede a la variable de entorno
-        port: +process.env.DB_PORT, // Convierte a número
+        host: process.env.DB_HOST, 
+        port: +process.env.DB_PORT,
         username: process.env.DB_USERNAME,
         password: process.env.DB_PASSWORD,
         database: process.env.DB_DATABASE,
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
-        synchronize: false, // Solo para desarrollo
+        synchronize: false, 
       }),
     }),
     DepartamentosModule,

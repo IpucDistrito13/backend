@@ -19,7 +19,7 @@ CREATE VIEW comites_view AS SELECT c.*,
 FROM comites c
 LEFT JOIN images img 
 ON img.imageable_id = c.id 
-AND img.imageable_type = 'App\\Models\\Comite'
+AND img.imageable_type = 'App\\Models\\Comite';
 
 -- VISTA DE CONGREGACIONES
 CREATE VIEW congregaciones_view AS
