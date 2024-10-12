@@ -14,6 +14,24 @@ import { ComitesModule } from './v1/comites/comites.module';
 import { LideresController } from './v1/lideres/lideres.controller';
 import { LideresService } from './v1/lideres/lideres.service';
 import { LideresModule } from './v1/lideres/lideres.module';
+import { SlidersController } from './v1/sliders/sliders.controller';
+import { SlidersService } from './v1/sliders/sliders.service';
+import { SlidersModule } from './v1/sliders/sliders.module';
+import { PodcastsController } from './v1/podcasts/podcasts.controller';
+import { PodcastsService } from './v1/podcasts/podcasts.service';
+import { PodcastsModule } from './v1/podcasts/podcasts.module';
+import { SeriesController } from './v1/series/series.controller';
+import { SeriesService } from './v1/series/series.service';
+import { SeriesModule } from './v1/series/series.module';
+import { EventosController } from './v1/eventos/eventos.controller';
+import { EventosService } from './v1/eventos/eventos.service';
+import { EventosModule } from './v1/eventos/eventos.module';
+import { CronogramasController } from './v1/cronogramas/cronogramas.controller';
+import { CronogramasService } from './v1/cronogramas/cronogramas.service';
+import { CronogramasModule } from './v1/cronogramas/cronogramas.module';
+import { TransmisionesController } from './v1/transmisiones/transmisiones.controller';
+import { TransmisionesService } from './v1/transmisiones/transmisiones.service';
+import { TransmisionesModule } from './v1/transmisiones/transmisiones.module';
 
 @Module({
   imports: [
@@ -37,8 +55,14 @@ import { LideresModule } from './v1/lideres/lideres.module';
     CongregacionesModule,
     ComitesModule,
     LideresModule,
+    SlidersModule,
+    PodcastsModule,
+    SeriesModule,
+    EventosModule,
+    CronogramasModule,
+    TransmisionesModule,
   ],
-  controllers: [UsersController, CongregacionesController, ComitesController, LideresController],
-  providers: [UsersService, CongregacionesService, ComitesService, LideresService],
+  controllers: [UsersController, CongregacionesController, ComitesController, LideresController, SlidersController, PodcastsController, SeriesController, EventosController, CronogramasController, TransmisionesController],
+  providers: [UsersService, CongregacionesService, ComitesService, LideresService, SlidersService, PodcastsService, SeriesService, EventosService, CronogramasService, TransmisionesService],
 })
 export class AppModule {}

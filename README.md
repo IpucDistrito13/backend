@@ -92,7 +92,6 @@ NODE_ENV=production npm start
 
 npm run start:dev
 
-
-nest g co /v1/podcast --no-spec
-nest g service /v1/podcast --no-spec
-nest g module /v1/podcast --no-spec
+nest g co /v1/transmisiones --no-spec
+nest g service /v1/transmisiones --no-spec
+nest g module /v1/transmisiones --no-spec
